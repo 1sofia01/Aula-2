@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-df = pd.read_csv('deputados_2022.csv')
+df = pd.read_csv('s_2022.csv')
 st.write(df)
 st.dataframe(df)
 
