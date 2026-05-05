@@ -8,6 +8,8 @@ st.write("Colunas do arquivo:")
 st.write(df.columns)
 
 sigla = st.text_input('Digite a sigla do partido')
+uf = st.text_input('Digite a UF')
+
 if sigla:
   st.dataframe(df[df['partido']==sigla.upper()])
 else:
