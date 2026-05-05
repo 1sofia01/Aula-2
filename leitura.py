@@ -9,5 +9,4 @@ st.write(df.columns)
 
 sigla = st.text_input('Digite a sigla do partido')
 if sigla:
-  st.dataframe(df[df['partido']==sigla.upper()]
-  
+  st.dataframe(df[df['partido']==sigla.upper()])
