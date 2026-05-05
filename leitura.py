@@ -3,7 +3,7 @@ import pandas as pd
 
 df = pd.read_csv('deputados_2022.csv')
 st.write(df)
-st.dataframe(df)
+st.dataframe(df_filtrado)
 
 st.write("Colunas do arquivo:")
 st.write(df.columns)
