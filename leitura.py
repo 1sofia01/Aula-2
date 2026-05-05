@@ -11,11 +11,11 @@ sigla = st.text_input('Digite a sigla do partido')
 uf = st.text_input('Digite a UF')
 
 if sigla:
-  st.dataframe(df[df['partido']==sigla.upper()])
+  df_filtrado = (df[df['partido']==sigla.upper()])
 else:
-  st.dataframe = df
+  df_filtrado = df
 
 if uf:
-  st.dataframe = df_filtrado[df_filtrado['uf']==uf.upper()]
+  df_filtrado = df_filtrado[df_filtrado['uf']==uf.upper()]
 
 st.dataframe(df_filtrado)
