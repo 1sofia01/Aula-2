@@ -13,7 +13,7 @@ uf = st.text_input('Digite a UF')
 df_filtrado = df
 
 if sigla:
-  df_filtrado = df[df['partido']==sigla.upper()]
+  df_filtrado = df_filtrado[df_filtrado['partido']==sigla.upper()]
 else:
   df_filtrado = df
 
