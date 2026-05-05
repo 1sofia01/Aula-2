@@ -3,7 +3,7 @@ import pandas as pd
 
 df = pd.read_csv('deputados_2022.csv')
 st.write(df)
-st.dataframe(df_filtrado)
+st.dataframe(df)
 
 st.write("Colunas do arquivo:")
 st.write(df.columns)
@@ -14,7 +14,7 @@ uf = st.text_input('Digite a UF')
 df_filtrado = df
 
 if sigla:
-  df_filtrado = df_filtrado[df_filtrado['partido']==sigla.upper()]
+  df_filtrado = df[df['partido']==sigla.upper()]
 else:
   df_filtrado = df
 
