@@ -10,6 +10,8 @@ st.write(df.columns)
 sigla = st.text_input('Digite a sigla do partido')
 uf = st.text_input('Digite a UF')
 
+df_filtrado = df
+
 if sigla:
   df_filtrado = df[df['partido']==sigla.upper()]
 else:
